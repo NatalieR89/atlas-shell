@@ -1,3 +1,3 @@
 #!/bin/bash
-$(whoami)
-$(groups $whoami)
+current_user=$(whoami)
+user_groups=$(groups $current_user)
