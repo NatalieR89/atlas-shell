@@ -1,5 +1,12 @@
 #!/bin/bash
 file_name="hello"
 if [ -e "file_name"]; then
-   chmod u+x "file_name"
-   
+    
+    chmod u+x "file_name"
+
+    echo "Execute permission added for the owner of file"
+
+else
+    echo "File $file_name not found in the current directory"
+
+fi
