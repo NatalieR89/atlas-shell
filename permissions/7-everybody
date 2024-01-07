@@ -1,4 +1,12 @@
 #!/bin/bash
-chmod g+x
-chmod u+x
-chmod o+x
+file="hello"
+
+if [ -e "$file" ]; then
+
+    chmod +x "$file"
+
+    chmod g+x "$file"
+
+    chmod o+x "$file"
+
+fi
