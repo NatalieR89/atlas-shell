@@ -1,10 +1,2 @@
 #!/bin/bash
-if [ -e "hello" ]; then
-
-    chmod +x "hello"
-
-    chmod g+x "hello"
-
-    chmod o+x "hello"
-
-fi
+chmod 0755 script.sh
