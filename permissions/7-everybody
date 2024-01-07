@@ -1,12 +1,10 @@
 #!/bin/bash
-file="hello"
+if [ -e "hello" ]; then
 
-if [ -e "$file" ]; then
+    chmod +x "hello"
 
-    chmod +x "$file"
+    chmod g+x "hello"
 
-    chmod g+x "$file"
-
-    chmod o+x "$file"
+    chmod o+x "hello"
 
 fi
