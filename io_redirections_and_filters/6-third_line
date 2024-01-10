@@ -1,8 +1,11 @@
 #!/bin/bash
+
 if [ -e "iacta" ]
+   
 then
     line=$(tail -n +3 iacta | head -n 1)
     echo "Third line Iacta: $line"
 else
+    
     echo "File 'Iacta' not found"
 fi
