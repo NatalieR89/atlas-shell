@@ -4,13 +4,12 @@
 hours=0
 
 while [ $hours -le 12 ]; do
+    echo "Hour: $hours"
+
     minutes=1
-    while [ $minutes -le 59 ]; do
-
-	formatted_hours=$(printf "%02d" $hours)
+        while [ $minutes -le 59 ]; do
 	formatted_minutes=$(printf "%02d" $minutes)
-
-	echo "$formatted_hours:$formatted_minutes"
+        echo "$formatted_minutes"
 
 	((minutes++))
 
@@ -18,4 +17,4 @@ while [ $hours -le 12 ]; do
 
     ((hours++))
 
-done
+done | head -n 70
