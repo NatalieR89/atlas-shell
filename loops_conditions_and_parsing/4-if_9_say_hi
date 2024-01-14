@@ -17,6 +17,5 @@ while [ $counter -le 10 ]
 
       fi
 
-      ((counter++))
-
+      counter=$((counter + 1))
 done
