@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # displays bad luck on #4, Good Luck on #8 and Best school on the others
 
 counter=1
