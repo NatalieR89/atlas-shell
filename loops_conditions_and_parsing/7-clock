@@ -7,9 +7,8 @@ while [ $hours -le 12 ]; do
     echo "Hour: $hours"
 
     minutes=1
-        while [ $minutes -le 59 ]; do
-	formatted_minutes=$(printf "%02d" $minutes)
-        echo "$formatted_minutes"
+    while [ $minutes -le 59 ]; do
+        echo "$minutes"
 
 	((minutes++))
 
