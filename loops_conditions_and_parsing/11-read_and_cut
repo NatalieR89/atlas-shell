@@ -3,7 +3,7 @@
 
 IFS ":"
 
-while read -r username x uid gid info home shell; do
+while read -r username uid home; do
     echo "Username: $username"
     echo "User ID: $uid"
     echo "Home Directory: $home"
