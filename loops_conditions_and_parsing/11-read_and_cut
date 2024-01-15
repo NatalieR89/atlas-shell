@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# displays Username uid and home dir.
+
+IFS ":"
+
+while read -r username x uid gid info home shell; do
+    echo "Username: $username"
+    echo "User ID: $uid"
+    echo "Home Directory: $home"
+done < /etc/passwd
