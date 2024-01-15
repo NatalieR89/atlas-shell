@@ -3,8 +3,8 @@
 
 IFS=":"
 
-while read -r USERNAME PASSWORD USER_INFO HOME_DIRECTORY COMMAND_SHELL; do
-    echo "The $USERNAME is part of the $GROUP_ID gang, lives in $HOME_DIRECTORY and rides $COMMAND_SHELL."
-    echo "USER ID's place is protected by the passcode $PASSWORD, more info about the user here: $USER_INFO"
-
+while read -r USERNAME PASSWORD USER_ID GROUP_ID USER_INFO HOME_DIRECTORY COMMAND_SHELL; do
+    echo "The user $USERNAME is part of the $GROUP_ID gang, lives in $HOME_DIRECTORY, and rides $COMMAND_SHELL."
+    echo "User ID's place is protected bt the passcode $PASSWORD, more info about the user here: $USER_INFO"
+    echo
 done < /etc/passwd
