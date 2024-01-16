@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # displays the content of /etc/passwd
 
-while IFS= read -r line; do
+while IFS= read -r line
+do
     username=$(echo "$line" | cut -f 1 -d ':')
     password=$(echo "$line" | cut -f 2 -d ':')
     userID=$(echo "$line" | cut -f 3 -d ':')
