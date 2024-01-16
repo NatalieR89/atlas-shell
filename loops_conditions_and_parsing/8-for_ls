@@ -1,13 +1,7 @@
 #!/usr/bin/env bash
 # display the content for current dir. in list format
 
-for file in *; do
-    if [[ ! $file =~ ^\. && $file =~ - ]]; then
-
-	name_part=$(echo "$file" | cut -d'-' -f2-)
-
-	echo "- $name_part"
-
-    fi
+for i in *; do
+    echo "$i" | cut -f 2- -d '-'
 
 done
